@@ -1,7 +1,7 @@
 .floating-wpp {
   position: fixed;
-  bottom: 25px;
-  left: 25px;
+  bottom: 26px;
+  left: 26gpx;
   font-size: 12px;
   transition: bottom 0.2s;
 }
