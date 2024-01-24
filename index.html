@@ -16,6 +16,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
      <!-- Feather Icons -->
      <script src="https://unpkg.com/feather-icons"></script>
 
@@ -35,6 +36,10 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="floating-wpp.min.js"></script>
+<link rel="stylesheet" href="floating-wpp.min.css">
 
         
 </head>
@@ -77,32 +82,34 @@
     </div>
 
  <div class="row"data-aos="fade-down">
-    <div class="icons-card" data-aos="zoom-in" data-aos-duration="10000" data-aos-delay="250">
+    <div class="icons-card" data-aos="zoom-in" data-aos-duration="10000" data-aos-delay="25">
         <img src="images/like.png" alt="Delicious" class="icons-card-img">
         <h3 class="icons-card-title">Delicious</h3>
         <p class="icons-card-desc">we use quality fish so the aroma and taste is very Delicious</p>
     </div>
-    <div class="icons-card" data-aos="zoom-in" data-aos-duration="10000" data-aos-delay="350">
+    <div class="icons-card" data-aos="zoom-in" data-aos-duration="10000" data-aos-delay="35">
         <img src="images/costumer.png" alt="Delicious" class="icons-card-img">
         <h3 class="icons-card-title">Satisfied Customer</h3>
         <p class="icons-card-desc">Served over millions of happy customers</p>
     </div>
-    <div class="icons-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="450">
+    <div class="icons-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="45">
         <img src="images/fast-delivery.png" alt="Delicious" class="icons-card-img">
         <h3 class="icons-card-title">Fast Delivery</h3>
         <p class="icons-card-desc">We always deliver orders on time</p>
     </div>
-    <div class="icons-card" data-aos="zoom-in" data-aos-duration="10000" data-aos-delay="550">
+ </div>
+ <div class="row"data-aos="fade-down">
+     <div class="icons-card" data-aos="zoom-in" data-aos-duration="10000" data-aos-delay="55">
         <img src="images/phone-call.png" alt="Delicious" class="icons-card-img">
         <h3 class="icons-card-title">Friendly Crew </h3>
         <p class="icons-card-desc">We love to  brighten your day by serving the best Brunch</p>
     </div>
-    <div class="icons-card" data-aos="zoom-in" data-aos-duration="10000" data-aos-delay="650">
+    <div class="icons-card" data-aos="zoom-in" data-aos-duration="10000" data-aos-delay="65">
         <img src="images/pay.png" alt="Delicious" class="icons-card-img">
         <h3 class="icons-card-title">Low-priced</h3>
         <p class="icons-card-desc">Not only does it taste good, the price is affordable</p>
     </div>
- </div>
+    </div>
     </section>
     
     <!-- Menu Section -->
@@ -219,6 +226,7 @@
     <!-- Contact Us -->
     <section id="contact" class="contact">
         <h4 data-aos="fade-down"data-aos-duration="10000" >Contact<span>Us</span></h4>
+         <p class="desc-contact" data-aos="zoom-in"data-aos-duration="10000">give us suggestions and criticism below</p>
 
         <div class="row" >
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127155.19152018463!2d119.28745684335937!3d-5.1679081000000044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf1d0d07f7f187%3A0xcb81e40b49a35302!2sPempek%20Leany!5e0!3m2!1sid!2sid!4v1691302551314!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -228,22 +236,30 @@
           <form action="">
             <div class="input-group">
               <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="nama">
+              <input type="text" placeholder="Enter your Name">
             </div>
 
             <div class="input-group">
               <i class="fa-solid fa-envelope"></i>
-              <input type="text" placeholder="email">
+              <input type="email" placeholder="Email">
             </div>
 
             <div class="input-group">
               <i class="fa-solid fa-phone"></i>
-                <input type="text" placeholder="no hp">
+                <input type="number" placeholder="Number">
             </div>
+
+            <div class="input-group">
+              <i class="fa-solid fa-message"></i>
+              <input type="text" placeholder="Message">
+            </div>
+            
             <button type="submit" class="btn">Send</button>
+            
           </form>
         </div>
     </section>
+     <div id="myDiv"></div>
 
     <!-- Footer -->
     <footer>
@@ -285,6 +301,9 @@
           },
         });
       </script>
+
+
+
     <!-- Feather Icons -->
     <script>
         feather.replace()
@@ -301,4 +320,14 @@
       });
     </script>
 </body>
+<script type="text/javascript">
+  $(function () {
+$('#myDiv').floatingWhatsApp({
+    phone: '6285331082983',
+    popupMessage: 'Hello, how can we help you?',
+    message: "I'd like to order a pempek",
+    showPopup: true
+});
+  });
+</script>
 </html>
